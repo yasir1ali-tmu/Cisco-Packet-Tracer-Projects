@@ -1,7 +1,7 @@
 # 🏢 Secure Enterprise Network with Inter-VLAN Routing & DHCP Snooping
 
 ## 📐 Network Topology Diagram
-![Network Topology](topology.png)
+![Network Topology](Topology.png)
 *Figure 1: Cisco Packet Tracer implementation showing R1 Router, SW1 Switch, and segmented endpoint subnets.*
 
 ## 📝 Project Overview
