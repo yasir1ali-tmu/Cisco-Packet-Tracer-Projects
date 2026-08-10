@@ -20,7 +20,12 @@ This lab demonstrates a secure, high-performance corporate data architecture. It
 - **Cryptographic Access (SSH v2):** Disabled plain-text Telnet interfaces, restricting all remote management to secure RSA-1024 encrypted SSH sessions.
 - **Rapid Convergence (Rapid-PVST+):** Optimised Spanning Tree parameters on the switch to minimize topology recalculation stabilization delays.
 
-### 🔍 Verification & CLI Validation
-- ✅ Verified dynamic addressing and accurate lease delivery on corporate workstations.
-- ✅ Validated encrypted connection paths via successful remote `ssh -l admin 192.168.99.2` login executions.
-- ✅ Confirmed local line protection bounds by verifying active interface lockdowns during unauthorized hardware spoofing triggers.
+---
+
+### 🔍 Verification Proofs & Live Validation
+- ✅ **Dynamic Lease Validation:** Terminal nodes successfully acquire accurate addressing blocks from the centralized core router pool.
+- ✅ **Cryptographic Tunneling:** VTY sessions rejected on unencrypted channels; local admin securely logs into active node via `ssh -l admin 192.168.99.2`.
+
+#### 🖼️ Live SSH Terminal & Ping Proof:
+![SSH Verification Proof](ssh_verification.png)
+*(Figure 2: Real-time Command Prompt verification showing successful ICMP ping matrix and secure SSH v2 encapsulation session initialization).*
